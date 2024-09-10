@@ -13,3 +13,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   },
 });
+
+//generate otp 
+const generateOTP = () => Math.floor(100000 + Math.random() * 900000).toString();
